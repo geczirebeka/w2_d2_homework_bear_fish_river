@@ -19,6 +19,7 @@ class Bear
 
     def bear_eats_fish(river)
         @stomach << river.fishes[1]
+        river.remove_fish()
     end
 
 
