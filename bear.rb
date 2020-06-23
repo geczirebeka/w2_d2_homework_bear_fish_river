@@ -17,4 +17,10 @@ class Bear
         return @stomach.count
     end
 
+    def bear_eats_fish(river)
+        @stomach << river.fishes[1]
+    end
+
+
+
 end
