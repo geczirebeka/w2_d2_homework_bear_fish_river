@@ -3,6 +3,7 @@ require('minitest/reporters')
 Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 require_relative('../bear')
+require_relative('../river')
 
 class BearTest < MiniTest::Test
 
@@ -12,5 +13,9 @@ class BearTest < MiniTest::Test
 
     def test_roar()
         assert_equal("Roar", @bear.roar())
+    end
+
+    def test_food_count()
+        assert_equal(0, @bear.food_count)
     end
 end
