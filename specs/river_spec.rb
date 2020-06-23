@@ -6,5 +6,13 @@ require_relative('../river')
 
 class RiverTest < MiniTest::Test
 
+    def setup()
+        @river = River.new("Amazon")
+    end
+
+    def test_fish_count()
+        assert_equal(3, @river.fish_count())
+    end
+
     
 end
